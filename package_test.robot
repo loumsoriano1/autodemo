@@ -6,11 +6,10 @@ Library    OperatingSystem
 ${PACKAGES_DIR}    ${CURDIR}${/}packages
 
 *** Test Cases ***
-
-Debug Files
-    Log    Current directory is: ${CURDIR}
-    List Files In Directory    ${CURDIR}
 	
 Smoke Test - Verify Package Files Exist
+C1 Verify test-1.0.0.txt exists
     File Should Exist    ${PACKAGES_DIR}\\test-1.0.0.txt
+	
+C2 Verify test-1.1.0.dll exists	
     File Should Exist    ${PACKAGES_DIR}\\test-1.1.0.dll
