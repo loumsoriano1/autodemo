@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat 'robot package_test.robot'
+                bat 'robot --outputdir results package_test.robot'
             }
         }
     }
