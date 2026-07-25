@@ -8,6 +8,16 @@ pipeline {
                 checkout scm
             }
         }
+		
+		stage('Debug Robot Environment') {
+			steps {
+				bat 'whoami'
+				bat 'where robot'
+				bat 'robot --version'
+				bat 'where python'
+				bat 'python --version'
+			}
+		}		
 
         stage('Debug Workspace') {
             steps {
