@@ -8,7 +8,12 @@ pipeline {
                 checkout scm
             }
         }
-
+		stage('Find Python') {
+			steps {
+				bat 'dir C:\\Python313'
+				bat 'dir C:\\Python313\\Scripts'
+			}
+		}
 	stage('Debug Python') {
 			steps {
 				bat 'python --version'
