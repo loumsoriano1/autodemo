@@ -2,7 +2,7 @@
 Library    OperatingSystem
 
 *** Variables ***
-${PACKAGES_DIR}    C:\\Users\\lsoriano\\Documents\\autodemo\\packages
+${PACKAGES_DIR}    C:\\Users\\LMMS\\Downloads\\autodemo\\packages
 
 *** Test Cases ***
 Smoke Test - Verify Package Files Exist
