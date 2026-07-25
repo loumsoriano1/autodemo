@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                bat package_test.robot 
+                bat 'robot autodemo\\package_test.robot'
             }
         }
     }
