@@ -7,6 +7,14 @@ pipeline {
                 checkout scm
             }
         }
+		stage('Debug Workspace') {
+			steps {
+				bat 'whoami'
+				bat 'dir'
+				bat 'dir packages'
+		}
+
+
         stage('Run Tests') {
             steps {
                         bat '''
