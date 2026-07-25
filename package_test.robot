@@ -2,7 +2,8 @@
 Library    OperatingSystem
 
 *** Variables ***
-${PACKAGES_DIR}    C:\\Users\\LMMS\\Downloads\\autodemo\\packages
+#${PACKAGES_DIR}    C:\\Users\\LMMS\\Downloads\\autodemo\\packages
+${PACKAGES_DIR}    ${CURDIR}${/}packages
 
 *** Test Cases ***
 Smoke Test - Verify Package Files Exist
