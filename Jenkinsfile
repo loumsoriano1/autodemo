@@ -8,6 +8,14 @@ pipeline {
                 checkout scm
             }
         }
+
+	stage('Debug Python') {
+			steps {
+				bat 'python --version'
+				bat 'python -m robot --version'
+				bat 'python -m pip show robotframework'
+			}
+		}
 		
 		stage('Debug Robot Environment') {
 			steps {
